@@ -1,0 +1,9 @@
+#pragma once
+
+#define ID_APP_ICON 201
+#define ID_APP_ICON_ALT 202
+#define ID_APP_NAME 203
+#define ID_MAIN_MENU 204
+#define ID_MAIN_MENU_ITEM_FILE_OPEN 205
+#define ID_MAIN_MENU_ITEM_FILE_EXIT 206
+#define ID_BUTTON_1 207
