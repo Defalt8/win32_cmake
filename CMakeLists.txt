@@ -6,7 +6,7 @@ set( MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>" )
 
 ######################################
 set( RESOURCE_MANIFEST "${PROJECT_SOURCE_DIR}/resources/win.exe.manifest" )
-include( "toolchains/win32_resource.cmake")
+include( "cmake/win32_resource.cmake")
 add_resource_icon( ID_APP_ICON "${PROJECT_SOURCE_DIR}/resources/icons/axl.ico" )
 add_resource_icon( ID_APP_ICON_ALT "${PROJECT_SOURCE_DIR}/resources/icons/axl.alt.ico" )
 add_resource_string( ID_APP_NAME "Win32 App" )
@@ -16,7 +16,8 @@ begin_resource_menu( ID_MAIN_MENU )
 		add_resource_menu_item( ID_MAIN_MENU_ITEM_FILE_EXIT "&Exit" )
 	end_resource_menu_popup()
 end_resource_menu()
-generate_resource_id( ID_BUTTON_1 )
+generate_resource_id( ID_BUTTON_CALL )
+generate_resource_id( ID_EDIT_NAME )
 generate_resource()
 ####################################
 
